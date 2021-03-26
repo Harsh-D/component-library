@@ -21,11 +21,12 @@
             <ul class="list nav--list">
                 <li class="nav-item"> <a href="/index.html" class="nav-link">Home</a> </li>
                 <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
-                <li class="nav-item"> <a href="https://github.com/Harsh-D/component-library-neog" class="nav-link">Github</a> </li>
+                <li class="nav-item"> <a href="https://github.com/Harsh-D/component-library" class="nav-link">Github</a>
+                </li>
             </ul>
         </div>
-        <div class="nav">
-            <ul class="list-stacked-div">
+        <div class="nav list-spaced-div">
+            <ul >
                 <li>
                     Avatar
                 </li>
@@ -74,306 +75,23 @@
             </ul>
         </div>
         <div class="main">
-            <!-- Avatar component : START -->
-            <div class="avatar-div">
-                <h2>Avatar</h2>
-                <img src="./images/avatar.png" alt="avatar-small" class="avatar small">
-                <img src="./images/avatar.png" alt="avatar-medium" class="avatar medium">
-                <img src="./images/avatar.png" alt="avatar-big" class="avatar big">
-            </div>
-            <!-- Avatar component : END -->
-            <!-- Alert component : START -->
-            <div class="alert-div">
-                <h2>Alert</h2>
-                <div class="alert">
-                    <!-- Use the following code to enable dismiss button : onclick="this.parentElement.style.display='none';" -->
-                    <span class="close-button">&times;</span>
-                    Danger: Indicates a potentially negative action.
-                </div>
-                <div class="alert success">
-                    <span class="close-button">&times;</span>
-                    Success: Indicates a successful action
-                </div>
-                <div class="alert info">
-                    <span class="close-button">&times;</span>
-                    Info: Indicates a neutral action.
-                </div>
-                <div class="alert warning">
-                    <span class="close-button">&times;</span>
-                    Warning: Indicates a warning that might need attention.
-                </div>
-            </div>
-            <!-- Alert component : END -->
-            <!-- Badge component : START -->
-            <div class="badge-div">
-                <h2>Badge</h2>
-                <h3>Badge on Icons</h3>
-                <div id="avatar-section-badges">
-                    <div class="avatar-container">
-                        <img src="./images/icon-chrome.png" alt="avatar" class="avatar small" />
-                        <span class="badge badge--round badge--top badge-border badge-active"></span>
-                    </div>
-                    <div class="avatar-container">
-                        <img src="./images/icon-chrome.png" alt="avatar" class="avatar small" />
-                        <span class="badge badge--round badge--top badge-border badge-inactive"></span>
-                    </div>
-                </div>
-                <h3>Badge on Avatars</h3>
-                <div id="avatar-section-badges">
-                    <div class="avatar-container">
-                        <img src="./images/avatar.png" alt="avatar" class="avatar medium" />
-                        <span class="badge badge--round badge--bottom badge-border badge-active"></span>
-                    </div>
-                    <div class="avatar-container">
-                        <img src="./images/avatar.png" alt="avatar" class="avatar medium" />
-                        <span class="badge badge--round badge--bottom badge-border badge-inactive"></span>
-                    </div>
-                </div>
-            </div>
-            <!-- Badge component : END -->
-            <!-- Button component : START -->
-            <div class="button-div">
-                <h1>Button</h1>
-                <button class="button primary-button"> Primary </button>
-                <button class="button secondary-button"> Secondary </button>
-                <button class="floating-action-button button-round">➕</button>
-            </div>
-
-            <div class="card-div">
-                <h1>Card</h1>
-                <div class="card-badge-div">
-                    <div class="card">
-                        <img src="/images/card-image.svg" alt="" style="width: 100%;">
-                        <h2>Cards with badges</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
-                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
-                            nisi culpa quaerat quas dicta omnis vel.</p>
-                        <span class="card-badge">MyBadge</span>
-                    </div>
-                </div>
-
-                <div class="card-dismiss-div">
-
-                    <div class="card">
-                        <img src="/images/card-image.svg" alt="" style="width: 100%;">
-                        <h2>Cards with dismiss</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
-                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
-                            nisi culpa quaerat quas dicta omnis vel.</p>
-                        <button class="card-remove ">&times;</button>
-                    </div>
-                </div>
-                <div class="card-text-overlay-div">
-                    <div class="card">
-                        <p class="card-overlay">This is text overlay</p>
-                        <img src="/images/card-image.svg" alt="" style="width: 100%;">
-                        <h2>Cards with text overlay</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
-                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
-                            nisi culpa quaerat quas dicta omnis vel.</p>
-                    </div>
-                </div>
-
-                <div class="card-text-div">
-                    <div class="card">
-                        <h2>Text only cards</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
-                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
-                            nisi culpa quaerat quas dicta omnis vel.</p>
-                    </div>
-                </div>
-                <div class="card-vertical-div">
-
-                    <div class="card">
-                        <img src="/images/card-image.svg" alt="" style="width: 100%;">
-                        <h2>Vertical/Horizontal cards</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
-                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
-                            nisi culpa quaerat quas dicta omnis vel.</p>
-                    </div>
-                </div>
-                <div class="card-shadow-div">
-                    <div class="card" style="box-shadow: 5px 10px #888888;">
-                        <img src="/images/card-image.svg" alt="" style="width: 100%;">
-                        <h2>Cards with shadow</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
-                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
-                            nisi culpa quaerat quas dicta omnis vel.</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="responsive-img-div">
-                <h1>Responsive Image</h1>
-                <div class="responsive-img-div1">
-                    <img src="/images/perfume.jpg" alt="" class="responsive-img-1">
-
-                </div>
-                <div class="responsive-img-div2">
-                    <img src="/images/perfume.jpg" alt="" class="responsive-img-2">
-
-                </div>
-            </div>
-            <div>
-                <h1>Input</h1>
-                <div class="input-div">
-                    textbox
-                    <input class="input input-style" type="text" name="text" id="text"
-                        placeholder="Enter your username" />
-                    <input class="input input-style" type="password" name="password" id="password"
-                        placeholder="Enter your password" required />
-                    <input class="input input-style" type="email" name="text" id="email" placeholder="Enter your email"
-                        required />
-                </div>
-                <div class="input-error-div">
-                    textbox : error-style
-                    <input class="input error-style" type="email" name="text" id="email" placeholder="Enter your email"
-                        required />
-                    <small class="error-text">Error - Invalid input</small>
-                </div>
-            </div>
-            <div class="list-div">
-                <h1>Lists</h1>
-                <div class="list-spaced-div">
-                    <h2>Spaced</h2>
-                    <ul>
-                        <li>
-                            Item 1
-                        </li>
-                        <li>
-                            Item 2
-                        </li>
-                        <li>
-                            Item 3
-                        </li>
-                    </ul>
-                </div>
-                <div class="list-stacked-div">
-                    <h2>Stacked</h2>
-                    <ul>
-                        <li>
-                            Item 1
-                        </li>
-                        <li>
-                            Item 2
-                        </li>
-                        <li>
-                            Item 3
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="nav-div">
-                <h1>Navigation</h1>
-                <nav class="nav-main nav-primary">
-                    <div class="nav--logo">
-                        <p>HD </p>
-                    </div>
-                    <ul class="list nav--list">
-                        <li class="nav-item"> <a href="#" class="nav-link">Products</a> </li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"> <a href="#" class="nav-link">Contacts</a> </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="modal-div">
-                <h1>Modal</h1>
-                <button id="myModalBtn" class="button secondary-button">Open Modal</button>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>Some text in the Modal..</p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="rating-div">
-                <h1>Rating</h1>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <br />
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <br />
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <br />
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <br />
-                <div class="clip-star"></div>
-
-            </div>
-            <div class="grid-div">
-                <h1>Simplified Grid</h1>
-                <div class="two-grid-div">
-                    <div class="card1-two-grid">
-                        <strong>First element</strong>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis amet soluta officia, quam
-                        ad cum commodi perferendis dolor quia ipsa. Dignissimos alias autem quidem cum ea tempora
-                        corrupti qui maxime?
-                    </div>
-                    <div class="card2-two-grid">
-                        <strong>Second element</strong>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quaerat quas vel ad, vero
-                        doloremque hic corrupti. Iure ut ipsa, nulla sunt nihil sed praesentium officiis distinctio
-                        eveniet explicabo atque.
-                    </div>
-                </div>
-                <div class="three-grid-div">
-                    <div class="card1-three-grid">
-                        <strong>First element</strong>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis amet soluta officia, quam
-                        ad cum commodi perferendis dolor quia ipsa. Dignissimos alias autem quidem cum ea tempora
-                        corrupti qui maxime?
-                    </div>
-                    <div class="card2-three-grid">
-                        <strong>Second element</strong>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quaerat quas vel ad, vero
-                        doloremque hic corrupti. Iure ut ipsa, nulla sunt nihil sed praesentium officiis distinctio
-                        eveniet explicabo atque.
-                    </div>
-                    <div class="card3-three-grid">
-                        <strong>Third element</strong>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quaerat quas vel ad, vero
-                        doloremque hic corrupti. Iure ut ipsa, nulla sunt nihil sed praesentium officiis distinctio
-                        eveniet explicabo atque.
-                    </div>
-                </div>
-            </div>
-            <div class="text-utilities-div">
-                <h1>Text Utilities</h1>
-                <div>
-                    <h2>headings : h2</h2>
-                </div>
-                <div>
-                    <small>small text</small>
-                </div>
-                <div style="color: gray;">
-                    gray text
-                </div>
-                <div style="text-align: center;">
-                    center text
-                </div>
-
-            </div>
-            <div class="toast-div">
-                <h1>Toast/Notify/Snackbar</h1>
-                <button id="myToastButton" class="button secondary-button">Show toast</button>
-                <div class="toast">
-                    Hi, I am a toast <br />
-                    <button id="myHideToastButton" class="button secondary-button">Hide</button>
-                </div>
-            </div>
-
+            <h1>Welcome to LogNUI</h1>
+            <strong>created to help you have unified styling across your projects</strong>
+            <h2>Usage</h2>
+            <strong>To use the styling, copy the below code and include it in your project. Then simply use the class
+                names as illustrated in the documentation to apply the CSS styles </strong>
+            <h3>
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Flognui.netlify.app%252Flognui.css%2522%253E"
+                style="width: 723px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </h3>
+            <h2>Go to the documentation page to check out the styling</h2>          
+            <a href="/documentation.html" style="text-decoration: none;"><button class="button primary-button" >Documentation</button> </a>
+            <h2>Checkout the Github repository</h2>
+            <a href="https://github.com/Harsh-D/component-library" style="text-decoration: none;"><button class="button secondary-button" >Github repository</button> </a>
+            
         </div>
         <footer class="footer">
             <div class="footer-header"></div>
