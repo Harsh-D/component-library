@@ -178,6 +178,7 @@
     padding: 1rem;
     margin: 1rem;
     background-color: white;
+    min-width: 230px;
 }
 
 .card-div>h1 {
@@ -249,7 +250,7 @@
 
 .horizontal-card {
     display: table;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 .horizontal-card-column {
