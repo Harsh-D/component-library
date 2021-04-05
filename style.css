@@ -24,7 +24,7 @@ body {
         "nav main main main main"
         "footer footer footer footer footer";
     display: grid;
-    gap: rem;
+    gap: 1rem;
 }
 
 .nav {
@@ -36,7 +36,6 @@ body {
 
 .main {
     grid-area: main;
-    /* border: 1px solid; */
     padding: 1em;
     margin: 1em;
     position: relative;
@@ -59,7 +58,6 @@ body {
 }
 
 .footer {
-    /* margin-top: 1rem; */
     background-color: var(--primary-color);
     padding: 2rem 1rem 1rem 1rem;
     text-align: center;

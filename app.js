@@ -34,7 +34,6 @@ let myHideToastButton = document.getElementById("myHideToastButton");
 let myToastClass = document.getElementsByClassName("toast")[0];
 
 myToastButton.onclick = function(){
-    console.log("clicked");
     myToastClass.style.visibility="visible";
 }
 myHideToastButton.onclick = function(){
