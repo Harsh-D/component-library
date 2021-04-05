@@ -20,53 +20,32 @@
             <ul class="list nav--list">
                 <li class="nav-item"> <a href="/index.html" class="nav-link">Home</a> </li>
                 <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
-                <li class="nav-item"> <a href="https://github.com/Harsh-D/component-library"
-                        class="nav-link">Github</a> </li>
+                <li class="nav-item"> <a href="https://github.com/Harsh-D/component-library" class="nav-link">Github</a>
+                </li>
             </ul>
         </div>
         <div class="nav list-spaced-div">
-            <ul >
-                <li>Avatar</li>
-                <li>Alert</li>
-                <li>Badge
-                </li>
-                <li>
-                    Button
-
-                </li>
-                <li>Card
-
-                </li>
-                <li>
-                    Image
-
-                </li>
-                <li>
-                    Input
-
-                </li>
-                <li>Lists
-
-                </li>
-                <li>
-                    Navigation
-
-                </li>
-                <li>Modal</li>
-                <li>Rating</li>
-                <li>Slider</li>
-                <li>Simplified Grid
-
-                </li>
-                <li>Text Utilities
-
-                </li>
-                <li>Toast/Notify/Snackbar</li>
+            <ul>
+                <li><a href="#Avatar" style="text-decoration: none;color: inherit;"> Avatar</a></li>
+                <li><a href="#Alert" style="text-decoration: none;color: inherit;"> Alert</a></li>
+                <li><a href="#Badge" style="text-decoration: none;color: inherit;"> Badge</a></li>
+                <li><a href="#Button" style="text-decoration: none;color: inherit;"> Button</a></li>
+                <li><a href="#Card" style="text-decoration: none;color: inherit;"> Card</a></li>
+                <li><a href="#Image" style="text-decoration: none;color: inherit;"> Image</a></li>
+                <li><a href="#Input" style="text-decoration: none;color: inherit;"> Input</a></li>
+                <li><a href="#Lists" style="text-decoration: none;color: inherit;"> Lists</a></li>
+                <li><a href="#Navigation" style="text-decoration: none;color: inherit;"> Navigation</a></li>
+                <li><a href="#Modal" style="text-decoration: none;color: inherit;"> Modal</a></li>
+                <li><a href="#Rating" style="text-decoration: none;color: inherit;"> Rating</a></li>
+                <li><a href="#Slider" style="text-decoration: none;color: inherit;"> Alert</a></li>
+                <li><a href="#SimplifiedGrid" style="text-decoration: none;color: inherit;"> Simplified Grid</a></li>
+                <li><a href="#TextUtilities" style="text-decoration: none;color: inherit;"> Text Utilities</a></li>
+                <li><a href="#Toast" style="text-decoration: none;color: inherit;"> Toast/Notify/Snackbar</a></li>
             </ul>
         </div>
         <div class="main">
             <!-- Avatar component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Avatar">
                 <h2>Avatar</h2>
                 <img src="./images/avatar.png" alt="avatar-small" class="avatar small">
                 <img src="./images/avatar.png" alt="avatar-medium" class="avatar medium">
@@ -82,7 +61,7 @@
             </div>
             <!-- Avatar component : END -->
             <!-- Alert component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Alert">
                 <h2>Alert</h2>
                 <div class="alert">
                     <!-- Use the following code to enable dismiss button : onclick="this.parentElement.style.display='none';" -->
@@ -112,7 +91,7 @@
             </div>
             <!-- Alert component : END -->
             <!-- Badge component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Badge">
                 <h2>Badge</h2>
                 <h3>Badge on Icons</h3>
                 <div id="avatar-section-badges">
@@ -147,7 +126,7 @@
             </div>
             <!-- Badge component : END -->
             <!-- Button component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Button">
                 <h1>Button</h1>
                 <button class="button primary-button"> Primary </button>
                 <button class="button secondary-button"> Secondary </button>
@@ -163,7 +142,7 @@
             </div>
             <!-- Button component : END -->
             <!-- Card component : START -->
-            <div class="component-container card-div">
+            <div class="component-container card-div" id="Card">
                 <h1>Card</h1>
                 <div class="card-badge-div">
                     <div class="card">
@@ -261,7 +240,7 @@
             </div>
             <!-- Card component : END -->
             <!-- Responsive Image component : START -->
-            <div class="responsive-img-div">
+            <div class="responsive-img-div" id="ResponsiveImage">
                 <h1>Responsive Image</h1>
                 <div class="responsive-img-div1">
                     <img src="/images/perfume.jpg" alt="" class="responsive-img-1">
@@ -280,7 +259,7 @@
             </div>
             <!-- Responsive Image component : END -->
             <!-- Input component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Input">
                 <h1>Input</h1>
                 <div class="input-div component-container">
                     textbox
@@ -308,7 +287,7 @@
             </div>
             <!-- Input component : END -->
             <!-- List component : START -->
-            <div class="list-div component-container">
+            <div class="list-div component-container" id="Lists">
                 <h1>Lists</h1>
                 <div class="list-spaced-div">
                     <h2>Spaced</h2>
@@ -347,8 +326,8 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            <!-- List component : START -->
-            <div class="nav-div component-container">
+            <!-- Navigation component : START -->
+            <div class="nav-div component-container" id="Navigation">
                 <h1>Navigation</h1>
                 <nav class="nav-main nav-primary">
                     <div class="nav--logo">
@@ -369,9 +348,9 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            <!-- List component : END -->
+            <!-- Navigation component : END -->
             <!-- Modal component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Modal">
                 <h1>Modal</h1>
                 <button id="myModalBtn" class="button primary-button">Open Modal</button>
                 <div id="myModal" class="modal">
@@ -391,7 +370,7 @@
             </div>
             <!-- Modal component : END -->
             <!-- Rating component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Rating">
                 <h1>Rating</h1>
                 <div class="clip-star"></div>
                 <div class="clip-star"></div>
@@ -423,7 +402,7 @@
             </div>
             <!-- Rating component : END -->
             <!-- Grid component : START -->
-            <div class="component-container">
+            <div class="component-container" id="SimplifiedGrid">
                 <h1>Simplified Grid</h1>
                 <div class="two-grid-div">
                     <div class="card1-two-grid">
@@ -476,7 +455,7 @@
             </div>
             <!-- Grid component : END -->
             <!-- Text Utilities component : START -->
-            <div class="component-container">
+            <div class="component-container" id="TextUtilities">
                 <h1>Text Utilities</h1>
                 <div>
                     <h2>headings : h2</h2>
@@ -501,11 +480,11 @@
             </div>
             <!-- Text Utilities component : END -->
             <!-- Toast component : START -->
-            <div class="component-container">
+            <div class="component-container" id="Toast">
                 <h1>Toast/Notify/Snackbar</h1>
                 <button id="myToastButton" class="button primary-button">Show toast</button>
                 <div class="toast">
-                    Hi, I am a toast 
+                    Hi, I am a toast
                     <button id="myHideToastButton" class="button toast-close-button">✖</button>
                 </div>
             </div>
