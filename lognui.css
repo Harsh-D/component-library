@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+:root {
+    --primary-color: #A5B4FC;
+    --outline-color: #374151;
+    --dark-gray: #d3d5d8;
+    --light-gray: #eceff3 ;
+    --off-white: #f3f4f6;
+}
+
 .component-container {
     border: 1px solid;
     padding: 1rem;

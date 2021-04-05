@@ -1,19 +1,3 @@
-// var ip = document.querySelector("#ip");
-// var op = document.querySelector("#op");
-
-
-// ip.addEventListener("click" , function onClickHandler() {
-//     ip.addEventListener("change", function checkPasswordLength(){
-//         var len = ip.value;
-//         if(len.length < 8) 
-//         {alert("Please enter more characters");}
-//         else{
-//          alert("Password is okay");
-//         }
-//     });
-// });
-
-
 // Get the modal
 let modal = document.getElementById("myModal");
 
