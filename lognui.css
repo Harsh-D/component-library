@@ -9,10 +9,11 @@
 }
 
 .component-container {
-    border: 1px solid;
+    border: 1px;
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
+    box-shadow: "5px 10px 5px #F3F4F6";
 }
 
 .iframe-container {
