@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+:root {
+    --primary-color: #A5B4FC;
+    --outline-color: #374151;
+    --dark-gray: #d3d5d8;
+    --light-gray: #eceff3 ;
+    --off-white: #f3f4f6;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    color: var(--outline-color) ;
+    background-color: var(--light-gray);
+    background-image: linear-gradient(to top left, var(--dark-gray),var(--light-gray));
+}
+
+.layout {
+    grid-template-areas:
+        "header header header header header"
+        "nav main main main main"
+        "nav main main main main"
+        "nav main main main main"
+        "footer footer footer footer footer";
+    display: grid;
+    gap: 1rem;
+}
+
+.nav {
+    grid-area: nav;
+    border: 1px ;
+    padding: 1em;
+    margin: 1em;
+}
+
+.main {
+    grid-area: main;
+    padding: 1em;
+    margin: 1em;
+    position: relative;
+}
+
+.header {
+    grid-area: header;
+    border: 1px solid;
+    padding: 1em;
+    margin: 1em;
+    margin-top: 0rem;
+    border-radius: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    border: 1px ;
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--primary-color);
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer li {
+    padding-top: 1rem;
+}
+
+.footer .link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer .social-icon {
+    width: 1rem;
+    padding-right: 0.5rem;
+    vertical-align: baseline;
+}
+
+.footer .social-icon.github {
+    width: 1.1rem;
+    fill: white;
+}
+
+.list-non-bullet {
+    list-style: none;
+}

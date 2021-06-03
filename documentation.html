@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lognui.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <title>Component Library</title>
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="header nav-main nav-primary">
+
+            <div class="nav--logo">
+                <p>Documentation </p>
+            </div>
+            <ul class="list nav--list">
+                <li class="nav-item"> <a href="/index.html" class="nav-link">Home</a> </li>
+                <li class="nav-item"><a href="/documentation.html" class="nav-link">Documentation</a></li>
+                <li class="nav-item"> <a href="https://github.com/Harsh-D/component-library" class="nav-link">Github</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav list-spaced-div">
+            <ul>
+                <li><a href="#Avatar" style="text-decoration: none;color: inherit;"> Avatar</a></li>
+                <li><a href="#Alert" style="text-decoration: none;color: inherit;"> Alert</a></li>
+                <li><a href="#Badge" style="text-decoration: none;color: inherit;"> Badge</a></li>
+                <li><a href="#Button" style="text-decoration: none;color: inherit;"> Button</a></li>
+                <li><a href="#Card" style="text-decoration: none;color: inherit;"> Card</a></li>
+                <li><a href="#Image" style="text-decoration: none;color: inherit;"> Image</a></li>
+                <li><a href="#Input" style="text-decoration: none;color: inherit;"> Input</a></li>
+                <li><a href="#Lists" style="text-decoration: none;color: inherit;"> Lists</a></li>
+                <li><a href="#Navigation" style="text-decoration: none;color: inherit;"> Navigation</a></li>
+                <li><a href="#Modal" style="text-decoration: none;color: inherit;"> Modal</a></li>
+                <li><a href="#Rating" style="text-decoration: none;color: inherit;"> Rating</a></li>
+                <li><a href="#Slider" style="text-decoration: none;color: inherit;"> Slider</a></li>
+                <li><a href="#SimplifiedGrid" style="text-decoration: none;color: inherit;"> Simplified Grid</a></li>
+                <li><a href="#TextUtilities" style="text-decoration: none;color: inherit;"> Text Utilities</a></li>
+                <li><a href="#Toast" style="text-decoration: none;color: inherit;"> Toast/Notify/Snackbar</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <!-- Avatar component : START -->
+            <div class="component-container" id="Avatar">
+                <h2>Avatar</h2>
+                <img src="./images/avatar.png" alt="avatar-small" class="avatar small">
+                <img src="./images/avatar.png" alt="avatar-medium" class="avatar medium">
+                <img src="./images/avatar.png" alt="avatar-big" class="avatar big">
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled avatars</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EAvatar%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar-small%2522%2520class%253D%2522avatar%2520small%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar-medium%2522%2520class%253D%2522avatar%2520medium%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar-big%2522%2520class%253D%2522avatar%2520big%2522%253E%2520%2520%2520%250A%253C%252Fdiv%253E"
+                    style="width: 799px; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Avatar component : END -->
+            <!-- Alert component : START -->
+            <div class="component-container" id="Alert">
+                <h2>Alert</h2>
+                <div class="alert">
+                    <!-- Use the following code to enable dismiss button : onclick="this.parentElement.style.display='none';" -->
+                    <span class="alert-close-button">&times;</span>
+                    Danger: Indicates a negative action.
+                </div>
+                <div class="alert success">
+                    <span class="alert-close-button">&times;</span>
+                    Success: Indicates a successful action
+                </div>
+                <div class="alert info">
+                    <span class="alert-close-button">&times;</span>
+                    Info: Indicates a neutral action.
+                </div>
+                <div class="alert warning">
+                    <span class="alert-close-button">&times;</span>
+                    Warning: Indicates a warning that might need attention.
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled alerts</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EAlert%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Use%2520the%2520following%2520code%2520to%2520enable%2520dismiss%2520button%2520%253A%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close-button%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520Danger%253A%2520Indicates%2520a%2520negative%2520action.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close-button%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Success%253A%2520Indicates%2520a%2520successful%2520action%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close-button%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Info%253A%2520Indicates%2520a%2520neutral%2520action.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close-button%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Warning%253A%2520Indicates%2520a%2520warning%2520that%2520might%2520need%2520attention.%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 569px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Alert component : END -->
+            <!-- Badge component : START -->
+            <div class="component-container" id="Badge">
+                <h2>Badge</h2>
+                <h3>Badge on Icons</h3>
+                <div id="avatar-section-badges">
+                    <div class="avatar-container">
+                        <img src="./images/icon-chrome.png" alt="avatar" class="avatar small" />
+                        <span class="badge badge-round badge-top badge-border badge-active"></span>
+                    </div>
+                    <div class="avatar-container">
+                        <img src="./images/icon-chrome.png" alt="avatar" class="avatar small" />
+                        <span class="badge badge-round badge-top badge-border badge-inactive"></span>
+                    </div>
+                </div>
+                <h3>Badge on Avatars</h3>
+                <div id="avatar-section-badges">
+                    <div class="avatar-container">
+                        <img src="./images/avatar.png" alt="avatar" class="avatar medium" />
+                        <span class="badge badge-round badge-bottom badge-border badge-active"></span>
+                    </div>
+                    <div class="avatar-container">
+                        <img src="./images/avatar.png" alt="avatar" class="avatar medium" />
+                        <span class="badge badge-round badge-bottom badge-border badge-inactive"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled badges</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%253Ch2%253EBadge%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Ch3%253EBadge%2520on%2520Icons%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cdiv%2520id%253D%2522avatar-section-badges%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cimg%2520src%253D%2522.%252Fimages%252Ficon-chrome.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520small%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-round%2520badge-top%2520badge-border%2520badge-active%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Ficon-chrome.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520small%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-round%2520badge-top%2520badge-border%2520badge-inactive%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ch3%253EBadge%2520on%2520Avatars%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cdiv%2520id%253D%2522avatar-section-badges%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522.%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520medium%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-round%2520badge-bottom%2520badge-border%2520badge-active%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253Cimg%2520src%253D%2522.%252Fimages%252Favatar.png%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520medium%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-round%2520badge-bottom%2520badge-border%2520badge-inactive%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 925px; height: 642px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Badge component : END -->
+            <!-- Button component : START -->
+            <div class="component-container" id="Button">
+                <h1>Button</h1>
+                <button class="button primary-button"> Primary </button>
+                <button class="button secondary-button"> Secondary </button>
+                <button class="floating-action-button button-round">➕</button>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled buttons</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%253Ch1%253EButton%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253E%2520Primary%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253E%2520Secondary%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522floating-action-button%2520button-round%2522%253E%25E2%259E%2595%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                    style="width: 717px; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Button component : END -->
+            <!-- Card component : START -->
+            <div class="component-container card-div" id="Card">
+                <h1>Card</h1>
+                <div class="card-badge-div">
+                    <div class="card">
+                        <img src="/images/card-image.svg" alt="" class="card-image">
+                        <h2>Cards with badges</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
+                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
+                            nisi culpa quaerat quas dicta omnis vel.</p>
+                        <span class="card-badge">MyBadge</span>
+                        <button class="button primary-button">Add to cart</button>
+                        <button class="button secondary-button">Add to wishlist </button>
+                    </div>
+                </div>
+                <div class="card-dismiss-div">
+                    <div class="card">
+                        <img src="/images/card-image.svg" alt="" class="card-image">
+                        <h2>Cards with dismiss</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
+                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
+                            nisi culpa quaerat quas dicta omnis vel.</p>
+                        <button class="card-remove button button-round">✖</button>
+                        <button class="button primary-button">Add to cart</button>
+                        <button class="button secondary-button">Add to wishlist </button>
+                    </div>
+                </div>
+                <div class="card-text-overlay-div">
+                    <div class="card">
+                        <p class="card-overlay">OUT OF STOCK</p>
+                        <img src="/images/card-image.svg" alt="" class="card-image">
+                        <h2>Cards with text overlay</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
+                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
+                            nisi culpa quaerat quas dicta omnis vel.</p>
+                        <button class="button primary-button">Add to cart</button>
+                        <button class="button secondary-button">Add to wishlist </button>
+                    </div>
+                </div>
+                <div class="card-text-div">
+                    <div class="card">
+                        <h2>Text only cards</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
+                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
+                            nisi culpa quaerat quas dicta omnis vel.</p>
+                    </div>
+                </div>
+                <div class="card-horizontal-div">
+                    <div class="card horizontal-card">
+                        <div class="horizontal-card-column">
+                            <img src="/images/card-image.svg" alt="" class="card-image">
+                        </div>
+                        <div class="horizontal-card-column">
+                            <h2>Horizontal cards</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
+                                ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores
+                                iste
+                                nisi culpa quaerat quas dicta omnis vel.</p>
+                            <div>
+                                <button class="button primary-button">Add to cart</button>
+                                <button class="button secondary-button">Add to wishlist </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-shadow-div">
+                    <div class="card shadow-card">
+                        <img src="/images/card-image.svg" alt="" class="card-image">
+                        <h2>Cards with shadow</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet odit voluptatem
+                            ratione nemo assumenda magnam quidem, accusamus expedita voluptatum libero asperiores iste
+                            nisi culpa quaerat quas dicta omnis vel.</p>
+                        <button class="button primary-button">Add to cart</button>
+                        <button class="button secondary-button">Add to wishlist </button>
+                    </div>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled cards</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2520card-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ECard%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-badge-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image.svg%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ECards%2520with%2520badges%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Corrupti%2520eveniet%2520odit%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520nemo%2520assumenda%2520magnam%2520quidem%252C%2520accusamus%2520expedita%2520voluptatum%2520libero%2520asperiores%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nisi%2520culpa%2520quaerat%2520quas%2520dicta%2520omnis%2520vel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253EMyBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253EAdd%2520to%2520wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image.svg%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ECards%2520with%2520dismiss%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Corrupti%2520eveniet%2520odit%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520nemo%2520assumenda%2520magnam%2520quidem%252C%2520accusamus%2520expedita%2520voluptatum%2520libero%2520asperiores%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nisi%2520culpa%2520quaerat%2520quas%2520dicta%2520omnis%2520vel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-remove%2520button%2520button-round%2522%253E%25E2%259C%2596%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253EAdd%2520to%2520wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="width: 1024px; height: 757px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2520card-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ECard%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-overlay-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-overlay%2522%253EOUT%2520OF%2520STOCK%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image.svg%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ECards%2520with%2520text%2520overlay%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Corrupti%2520eveniet%2520odit%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520nemo%2520assumenda%2520magnam%2520quidem%252C%2520accusamus%2520expedita%2520voluptatum%2520libero%2520asperiores%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nisi%2520culpa%2520quaerat%2520quas%2520dicta%2520omnis%2520vel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253EAdd%2520to%2520wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EText%2520only%2520cards%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Corrupti%2520eveniet%2520odit%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520nemo%2520assumenda%2520magnam%2520quidem%252C%2520accusamus%2520expedita%2520voluptatum%2520libero%2520asperiores%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nisi%2520culpa%2520quaerat%2520quas%2520dicta%2520omnis%2520vel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 683px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2520card-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ECard%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-horizontal-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520horizontal-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image.svg%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253EHorizontal%2520cards%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Corrupti%2520eveniet%2520odit%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520nemo%2520assumenda%2520magnam%2520quidem%252C%2520accusamus%2520expedita%2520voluptatum%2520libero%2520asperiores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nisi%2520culpa%2520quaerat%2520quas%2520dicta%2520omnis%2520vel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253EAdd%2520to%2520wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-shadow-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520shadow-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcard-image.svg%2522%2520alt%253D%2522%2522%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ECards%2520with%2520shadow%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Corrupti%2520eveniet%2520odit%2520voluptatem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ratione%2520nemo%2520assumenda%2520magnam%2520quidem%252C%2520accusamus%2520expedita%2520voluptatum%2520libero%2520asperiores%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520nisi%2520culpa%2520quaerat%2520quas%2520dicta%2520omnis%2520vel.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520primary-button%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520secondary-button%2522%253EAdd%2520to%2520wishlist%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 886px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Card component : END -->
+            <!-- Responsive Image component : START -->
+            <div class="responsive-img-div" id="ResponsiveImage">
+                <h1>Responsive Image</h1>
+                <div class="responsive-img-div1">
+                    <img src="/images/perfume.jpg" alt="" class="responsive-img-1">
+                </div>
+                <div class="responsive-img-div2">
+                    <img src="/images/perfume.jpg" alt="" class="responsive-img-2">
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get responsive images</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522responsive-img-div%2522%253E%250A%2520%2520%2520%2520%253Ch1%253EResponsive%2520Image%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522responsive-img-div1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fperfume.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522responsive-img-1%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522responsive-img-div2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fperfume.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522responsive-img-2%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 756px; height: 350px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Responsive Image component : END -->
+            <!-- Input component : START -->
+            <div class="component-container" id="Input">
+                <h1>Input</h1>
+                <div class="input-div component-container">
+                    textbox
+                    <input class="input input-style" type="text" name="text" id="text"
+                        placeholder="Enter your username" />
+                    <input class="input input-style" type="password" name="password" id="password"
+                        placeholder="Enter your password" required />
+                    <input class="input input-style" type="email" name="text" id="email" placeholder="Enter your email"
+                        required />
+                </div>
+                <div class="input-error-div component-container">
+                    textbox : error-style
+                    <input class="input error-style" type="email" name="text" id="email" placeholder="Enter your email"
+                        required />
+                    <small class="error-text">Error - Invalid input</small>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled input elements</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%253Ch1%253EInput%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-div%2520component-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520textbox%250A%2520%2520%2520%2520%2509%253Cinput%2520class%253D%2522input%2520input-style%2522%2520type%253D%2522text%2522%2520name%253D%2522text%2522%2520id%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520username%2522%2520%252F%253E%250A%2520%2520%2520%2520%2509%253Cinput%2520class%253D%2522input%2520input-style%2522%2520type%253D%2522password%2522%2520name%253D%2522password%2522%2520id%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520password%2522%2520required%2520%252F%253E%250A%2520%2520%2520%2520%2509%253Cinput%2520class%253D%2522input%2520input-style%2522%2520type%253D%2522email%2522%2520name%253D%2522text%2522%2520id%253D%2522email%2522%2520placeholder%253D%2522Enter%2520your%2520%2509%2509%2509%2509email%2522%2520required%2520%252F%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-error-div%2520component-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520textbox%2520%253A%2520error-style%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522input%2520error-style%2522%2520type%253D%2522email%2522%2520name%253D%2522text%2522%2520id%253D%2522email%2522%2520placeholder%253D%2522Enter%2520your%2520%2509%2509%2509%2509email%2522required%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522error-text%2522%253EError%2520-%2520Invalid%2520input%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 514px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Input component : END -->
+            <!-- List component : START -->
+            <div class="list-div component-container" id="Lists">
+                <h1>Lists</h1>
+                <div class="list-spaced-div">
+                    <h2>Spaced</h2>
+                    <ul>
+                        <li>
+                            Item 1
+                        </li>
+                        <li>
+                            Item 2
+                        </li>
+                        <li>
+                            Item 3
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-stacked-div">
+                    <h2>Stacked</h2>
+                    <ul>
+                        <li>
+                            Item 1
+                        </li>
+                        <li>
+                            Item 2
+                        </li>
+                        <li>
+                            Item 3
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled lists</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522list-div%2520component-container%2522%253E%250A%2520%2520%2520%2520%253Ch1%253ELists%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-spaced-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253ESpaced%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Item%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Item%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Item%25203%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522list-stacked-div%2522%253E%250A%2520%2520%2520%2520%2520%253Ch2%253EStacked%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Item%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Item%25202%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Item%25203%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 504px; height: 752px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Navigation component : START -->
+            <div class="nav-div component-container" id="Navigation">
+                <h1>Navigation</h1>
+                <nav class="nav-main nav-primary">
+                    <div class="nav--logo">
+                        <p>HD </p>
+                    </div>
+                    <ul class="list nav--list">
+                        <li class="nav-item"> <a href="#" class="nav-link">Products</a> </li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"> <a href="#" class="nav-link">Contacts</a> </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get navigation bar</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522nav-div%2520component-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ENavigation%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522nav-main%2520nav-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav--logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EHD%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2520nav--list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253EProducts%253C%252Fa%253E%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253EAbout%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-item%2522%253E%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-link%2522%253EContacts%253C%252Fa%253E%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 934px; height: 423px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Navigation component : END -->
+            <!-- Modal component : START -->
+            <div class="component-container" id="Modal">
+                <h1>Modal</h1>
+                <button id="myModalBtn" class="button primary-button">Open Modal</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled modal</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EModal%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522myModalBtn%2522%2520class%253D%2522button%2520secondary-button%2522%253EOpen%2520Modal%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522myModal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253ESome%2520text%2520in%2520the%2520Modal..%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 917px; height: 368px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Modal component : END -->
+            <!-- Rating component : START -->
+            <div class="component-container" id="Rating">
+                <h1>Rating</h1>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <br />
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <br />
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <br />
+                <div class="clip-star"></div>
+                <div class="clip-star"></div>
+                <br />
+                <div class="clip-star"></div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled rating</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ERating%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbr%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522clip-star%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 529px; height: 587px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Rating component : END -->
+            <!-- Grid component : START -->
+            <div class="component-container" id="SimplifiedGrid">
+                <h1>Simplified Grid</h1>
+                <div class="two-grid-div">
+                    <div class="card1-two-grid">
+                        <strong>First element</strong>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis amet soluta officia, quam
+                        ad cum commodi perferendis dolor quia ipsa. Dignissimos alias autem quidem cum ea tempora
+                        corrupti qui maxime?
+                    </div>
+                    <div class="card2-two-grid">
+                        <strong>Second element</strong>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quaerat quas vel ad, vero
+                        doloremque hic corrupti. Iure ut ipsa, nulla sunt nihil sed praesentium officiis distinctio
+                        eveniet explicabo atque.
+                    </div>
+                </div>
+                <div class="three-grid-div">
+                    <div class="card1-three-grid">
+                        <strong>First element</strong>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis amet soluta officia, quam
+                        ad cum commodi perferendis dolor quia ipsa. Dignissimos alias autem quidem cum ea tempora
+                        corrupti qui maxime?
+                    </div>
+                    <div class="card2-three-grid">
+                        <strong>Second element</strong>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quaerat quas vel ad, vero
+                        doloremque hic corrupti. Iure ut ipsa, nulla sunt nihil sed praesentium officiis distinctio
+                        eveniet explicabo atque.
+                    </div>
+                    <div class="card3-three-grid">
+                        <strong>Third element</strong>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quaerat quas vel ad, vero
+                        doloremque hic corrupti. Iure ut ipsa, nulla sunt nihil sed praesentium officiis distinctio
+                        eveniet explicabo atque.
+                    </div>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get simplfied grid</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ESimplified%2520Grid%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522two-grid-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card1-two-grid%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EFirst%2520element%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Blanditiis%2520amet%2520soluta%2520officia%252C%2520quam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ad%2520cum%2520commodi%2520perferendis%2520dolor%2520quia%2520ipsa.%2520Dignissimos%2520alias%2520autem%2520quidem%2520cum%2520ea%2520tempora%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520corrupti%2520qui%2520maxime%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card2-two-grid%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESecond%2520element%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Earum%2520quaerat%2520quas%2520vel%2520ad%252C%2520vero%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520doloremque%2520hic%2520corrupti.%2520Iure%2520ut%2520ipsa%252C%2520nulla%2520sunt%2520nihil%2520sed%2520praesentium%2520officiis%2520distinctio%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eveniet%2520explicabo%2520atque.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 569px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253ESimplified%2520Grid%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522three-grid-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card1-three-grid%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EFirst%2520element%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Blanditiis%2520amet%2520soluta%2520officia%252C%2520quam%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ad%2520cum%2520commodi%2520perferendis%2520dolor%2520quia%2520ipsa.%2520Dignissimos%2520alias%2520autem%2520quidem%2520cum%2520ea%2520tempora%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520corrupti%2520qui%2520maxime%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card2-three-grid%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESecond%2520element%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Earum%2520quaerat%2520quas%2520vel%2520ad%252C%2520vero%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520doloremque%2520hic%2520corrupti.%2520Iure%2520ut%2520ipsa%252C%2520nulla%2520sunt%2520nihil%2520sed%2520praesentium%2520officiis%2520distinctio%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eveniet%2520explicabo%2520atque.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card3-three-grid%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EThird%2520element%253C%252Fstrong%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%252C%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Earum%2520quaerat%2520quas%2520vel%2520ad%252C%2520vero%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520doloremque%2520hic%2520corrupti.%2520Iure%2520ut%2520ipsa%252C%2520nulla%2520sunt%2520nihil%2520sed%2520praesentium%2520officiis%2520distinctio%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520eveniet%2520explicabo%2520atque.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 715px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+            <!-- Grid component : END -->
+            <!-- Text Utilities component : START -->
+            <div class="component-container" id="TextUtilities">
+                <h1>Text Utilities</h1>
+                <div>
+                    <h2>headings : h2</h2>
+                </div>
+                <div>
+                    <small>small text</small>
+                </div>
+                <div style="color: gray;">
+                    gray text
+                </div>
+                <div style="text-align: center;">
+                    center text
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled text</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522text-utilities-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EText%2520Utilities%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253Eheadings%2520%253A%2520h2%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Esmall%2520text%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520style%253D%2522color%253A%2520gray%253B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520gray%2520text%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520style%253D%2522text-align%253A%2520center%253B%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520center%2520text%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style="width: 563px; height: 460px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Text Utilities component : END -->
+            <!-- Toast component : START -->
+            <div class="component-container" id="Toast">
+                <h1>Toast/Notify/Snackbar</h1>
+                <button id="myToastButton" class="button primary-button">Show toast</button>
+                <div class="toast">
+                    Hi, I am a toast
+                    <button id="myHideToastButton" class="button toast-close-button">✖</button>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h3>Copy this code to get styled toast</h3>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522component-container%2522%2520id%253D%2522Toast%2522%253E%250A%2520%2520%2520%2520%253Ch1%253EToast%252FNotify%252FSnackbar%253C%252Fh1%253E%250A%2520%2520%2520%2520%253Cbutton%2520id%253D%2522myToastButton%2522%2520class%253D%2522button%2520primary-button%2522%253EShow%2520toast%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Hi%252C%2520I%2520am%2520a%2520toast%250A%2520%2520%2520%2520%2509%253Cbutton%2520id%253D%2522myHideToastButton%2522%2520class%253D%2522button%2520toast-close-button%2522%253E%25E2%259C%2596%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 853px; height: 333px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Toast component : END -->
+
+        </div>
+        <footer class="footer">
+            <div class="footer-header"></div>
+            <ul class="list-non-bullet">
+                <li>
+                    <a href="https://www.twitter.com/Harshdeshpande5" class="link">
+                        <img src="./images/twitter.svg" class="social-icon"> twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/harsh-deshpande-146bb6168/" class="link"> <img
+                            src="./images/linkedin.svg" class="social-icon"> LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/Harsh-D" class="link"><img src="./images/github.svg"
+                            class="social-icon github"> github</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
