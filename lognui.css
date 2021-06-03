@@ -236,12 +236,10 @@
 
 .card-badge-div {
     grid-area: card-badge-div;
-    position: relative;
 }
 
 .card-dismiss-div {
     grid-area: card-dismiss-div;
-    position: relative;
 }
 
 .card-text-div {
@@ -251,12 +249,11 @@
 
 .card-text-overlay-div {
     grid-area: card-text-overlay-div;
-    position: relative;
+
 }
 
 .card-horizontal-div:after {
     grid-area: card-horizontal-div;
-    position: relative;
 }
 
 .horizontal-card {
@@ -331,8 +328,7 @@
 }
 
 .input {
-    width: 50%;
-    max-width: 70%;
+    max-width: 50%;
     padding: 1rem;
     font-size: 0.8rem;
     border-radius: 0.6rem;
@@ -363,7 +359,6 @@
 /* List section : START*/
 .list-div {
     display: flex;
-    flex-direction: row;
 }
 
 .list-spaced-div {
@@ -415,7 +410,6 @@
 
 .nav--logo {
     font-size: 2rem;
-    /* text-transform: uppercase; */
     font-weight: 700;
     padding-left: 1rem;
     color: #151d2e;
@@ -463,11 +457,9 @@
     background-color: var(--primary-color);
     color: #151d2e;
     margin: 15% auto;
-    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    /* Could be more or less, depending on screen size */
 }
 
 .close {

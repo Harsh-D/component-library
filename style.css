@@ -55,9 +55,6 @@ body {
     border: 1px ;
     padding: 1em;
     margin: 1em;
-}
-
-.footer {
     background-color: var(--primary-color);
     padding: 2rem 1rem 1rem 1rem;
     text-align: center;
